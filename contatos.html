@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css">
+    <style>
+        body { background-color: #e16331; }
+        header, footer {
+            padding: 15px;
+            background-color: #1c2c3d;
+        }
+        main {
+            padding: 20px;
+            overflow-y: auto;
+            height: calc(100vh - 100px);
+        }
+        footer {
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Cadastro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li><a href="home.html">MENU</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <h1>Cadastro</h1>
+        <form action="mailto:seuemail@exemplo.com" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6">
+                    <label for="rua">Rua:</label>
+                    <input type="text" class="form-control" id="rua" name="rua" required>
+                </div>
+                <div class="col-md-2">
+                    <label for="numero">Número:</label>
+                    <input type="number" class="form-control" id="numero" name="numero" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" class="form-control" id="complemento" name="complemento" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" class="form-control" id="cidade" name="cidade" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="estado">Estado:</label>
+                    <input type="text" class="form-control" id="estado" name="estado" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="cep">CEP:</label>
+                    <input type="text" class="form-control" id="cep" name="cep" required pattern="\d{5}-\d{3}">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Direitos Reservados</p>
+    </footer>
+</body>
+</html>

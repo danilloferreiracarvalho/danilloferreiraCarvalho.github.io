@@ -1,0 +1,33 @@
+/* Add your CSS styles for the recipe panels here */
+.receita {
+    background-color: #f9f9f9fc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+.receita img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.receita ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.receita ul li {
+    margin-bottom: 5px;
+}
+
+/* Add any other styles you need */

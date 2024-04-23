@@ -1,0 +1,37 @@
+section {
+    background-image: url("images/sunset.png");
+}
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:rgb(250, 150, 114) /* Cor de fundo terrosa */
+}
+
+section {
+    background-image: url("images/sunset.png");
+    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+    text-align: center;
+    padding: 100px 0;
+    color: #fff; /* Cor do texto */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 10px 0;
+}
+p{
+    padding-bottom: 5px;
+}
